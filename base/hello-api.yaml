@@ -22,7 +22,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: greeter-app
-              value: greeting
+              key: greeting
         ports:
         - containerPort: 8080
 ---
