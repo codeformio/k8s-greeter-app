@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-api
+  template:
+    metadata:
+      labels:
+        app: hello-api
+    spec:
+      containers:
+      - name: app
+        env:
+        - name: ADDR
+          value: :8080
+        image: docker.io/codeformio/hello-api:v1.2.2
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-api
+spec:
+  selector:
+    app: hello-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
