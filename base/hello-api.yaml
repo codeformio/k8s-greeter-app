@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: app
+        image: docker.io/codeform/hello-api:latest
         env:
         - name: ADDR
           value: :8080
-        image: docker.io/codeformio/hello-api:v1.2.2
         ports:
         - containerPort: 8080
 ---

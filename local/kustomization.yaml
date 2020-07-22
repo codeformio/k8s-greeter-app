@@ -4,3 +4,7 @@ resources:
 - ../base
 patchesStrategicMerge:
   #- patch-cm.yaml
+
+images:
+- name: docker.io/codeform/hello-api
+  newTag: v1.2.2
