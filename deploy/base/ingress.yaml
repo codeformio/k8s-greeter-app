@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: hello-api
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /greeter/api
+        backend:
+          serviceName: hello-api
+          servicePort: 80
