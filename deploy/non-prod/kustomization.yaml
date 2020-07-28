@@ -7,3 +7,4 @@ patchesStrategicMerge:
 images:
 - name: docker.io/codeform/hello-api
   newTag: v1.3.0
+namespace: abc
