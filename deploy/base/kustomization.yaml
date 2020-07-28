@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - ./config.yaml
 - ./hello-api.yaml
-- ./ingress.yaml
+  #- ./ingress.yaml
