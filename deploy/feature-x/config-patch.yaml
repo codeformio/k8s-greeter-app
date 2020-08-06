@@ -1,0 +1,7 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: greeter-app
+data:
+  greeting: Hi from greeter with feature X!
