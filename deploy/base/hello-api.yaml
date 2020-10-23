@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: docker.io/codeform/hello-api:v1.5.1
+        image: docker.io/codeform/hello-api
         env:
         - name: ADDR
           value: :8080
